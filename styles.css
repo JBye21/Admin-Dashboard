@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Fjalla;
+    src: url("FjallaOne-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 40px;
+}
+
+body {
+    height: 100%;
+    font-family: Fjalla;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 100%));
+    grid-template-rows: repeat(6, minmax(145px, 100%));
+    height: 100vh;
+}
+
+.header {
+    padding-top: 13px;
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    background-color: rgba(246, 246, 247, 0.884);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+
+#search-logo {
+    grid-column: 2 / 2;
+}
+
+.search-bar {
+    grid-column: 3 / 13;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+#bell-logo {
+    grid-column: 14 / 15;
+}
+
+.users-name {
+    grid-column: 16 / 18;
+}
+
+#large-user-icon {
+    grid-column: 2 / 3;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.greeting {
+    grid-column: 3 / 7;
+    padding-left: 20px;
+}
+
+.header-button-container {
+    grid-column: 13 / 18;
+    display: flex;
+    gap: 25px;
+}
+
+.header-buttons {
+    width: 200px;
+    border-radius: 50px;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+}
+
+.search {
+    background-color: #46ac96;
+    grid-column: 2 / 12;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-logo {
+    width: 25px;
+}
+
+.top-right {
+    background-color: aquamarine;
+    grid-column: 14 / 19;
+}
+
+.bottom-left {
+    background-color: #2dd1ae;
+    grid-column: 2 / 7;
+}
+
+.bottom-right {
+    background-color: rgb(53, 156, 122);
+    grid-column: 13 / 19;
+}
+
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+    background-color: #0ea5e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.sidebar-top {
+    display: flex;
+    gap: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 20px;
+    height: 40%;
+    align-self: flex-start;
+}
+
+.sidebar-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-text {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-bottom-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 20px;
+    height: 20%;
+    align-self: flex-start;
+}
+
+.sidebar-bottom-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-bottom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+.main {
+    grid-row: 2 / 7;
+    grid-column: 2 / 5;
+    background-color: #e5e7eb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 65px repeat(9, 1fr);
+    gap: 20px;
+}
+
+.main .main-cards-title {
+    grid-column: 1 / 2;
+    align-self: flex-end;
+    padding-left: 10px;
+}
+
+.main .main-cards {
+    background-color: #e5e7eb;
+    grid-column: 1 / 3;
+    grid-row: 2 / 11;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-left-style: solid;
+    border-left-color: fuchsia;
+    border-left-width: 6px;
+    border-radius: 20px;
+}
+
+.top-right-title {
+    grid-column: 3 / 4;
+    align-self: flex-end;
+    padding-left: 10px;
+}
+
+.top-right-cards {
+    background-color: rgb(209, 146, 63);
+    grid-column: 3 / 4;
+    grid-row: 2 / 6;
+}
+
+.bottom-right-title {
+    align-self: flex-end;
+    padding-left: 10px;
+}
+
+.bottom-right-cards {
+    background-color: cadetblue;
+    grid-column: 3 / 4;
+    grid-row: 7 / 11;
+}
